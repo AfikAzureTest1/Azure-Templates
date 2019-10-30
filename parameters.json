@@ -1,0 +1,210 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "esVersion": {
+            "value": "7.4.0"
+        },
+        "esClusterName": {
+            "value": "es-cluster"
+        },
+        "azureCloudPlugin": {
+            "value": "No"
+        },
+        "azureCloudStorageAccountName": {
+            "value": ""
+        },
+        "azureCloudStorageAccountResourceGroup": {
+            "value": ""
+        },
+        "xpackPlugins": {
+            "value": "Yes"
+        },
+        "esAdditionalPlugins": {
+            "value": ""
+        },
+        "esAdditionalYaml": {
+            "value": ""
+        },
+        "samlMetadataUri": {
+            "value": ""
+        },
+        "samlServiceProviderUri": {
+            "value": ""
+        },
+        "esHeapSize": {
+            "value": 0
+        },
+        "loadBalancerType": {
+            "value": "external"
+        },
+        "loadBalancerInternalSku": {
+            "value": "Basic"
+        },
+        "loadBalancerExternalSku": {
+            "value": "Basic"
+        },
+        "vNetNewOrExisting": {
+            "value": "new"
+        },
+        "vNetName": {
+            "value": "es-net"
+        },
+        "vNetClusterSubnetName": {
+            "value": "es-subnet"
+        },
+        "vNetLoadBalancerIp": {
+            "value": "10.0.0.4"
+        },
+        "vNetExistingResourceGroup": {
+            "value": "AfikArviv"
+        },
+        "vNetNewAddressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "vNetNewClusterSubnetAddressPrefix": {
+            "value": "10.0.0.0/25"
+        },
+        "vNetAppGatewaySubnetName": {
+            "value": "es-gateway-subnet"
+        },
+        "vNetNewAppGatewaySubnetAddressPrefix": {
+            "value": ""
+        },
+        "kibana": {
+            "value": "No"
+        },
+        "vmSizeKibana": {
+            "value": "Standard_D1"
+        },
+        "vmKibanaAcceleratedNetworking": {
+            "value": "Default"
+        },
+        "kibanaAdditionalYaml": {
+            "value": ""
+        },
+        "logstash": {
+            "value": "No"
+        },
+        "vmSizeLogstash": {
+            "value": "Standard_D1"
+        },
+        "vmLogstashCount": {
+            "value": 1
+        },
+        "vmLogstashAcceleratedNetworking": {
+            "value": "Default"
+        },
+        "logstashHeapSize": {
+            "value": 0
+        },
+        "logstashConf": {
+            "value": null
+        },
+        "logstashKeystorePassword": {
+            "value": null
+        },
+        "logstashAdditionalPlugins": {
+            "value": ""
+        },
+        "logstashAdditionalYaml": {
+            "value": ""
+        },
+        "jumpbox": {
+            "value": "Yes"
+        },
+        "vmSizeDataNodes": {
+            "value": "Standard_DS1_v2"
+        },
+        "vmDataNodeAcceleratedNetworking": {
+            "value": "Default"
+        },
+        "vmDataDiskCount": {
+            "value": 1
+        },
+        "vmDataDiskSize": {
+            "value": "64GiB"
+        },
+        "vmDataNodeCount": {
+            "value": 3
+        },
+        "storageAccountType": {
+            "value": "Default"
+        },
+        "dataNodesAreMasterEligible": {
+            "value": "Yes"
+        },
+        "vmHostNamePrefix": {
+            "value": "dn-"
+        },
+        "vmMasterNodeAcceleratedNetworking": {
+            "value": "Default"
+        },
+        "vmClientNodeCount": {
+            "value": 0
+        },
+        "vmSizeClientNodes": {
+            "value": "Standard_D1"
+        },
+        "vmClientNodeAcceleratedNetworking": {
+            "value": "Default"
+        },
+        "adminUsername": {
+            "value": "Afik"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "securityBootstrapPassword": {
+            "value": null
+        },
+        "securityAdminPassword": {
+            "value": null
+        },
+        "securityKibanaPassword": {
+            "value": null
+        },
+        "securityLogstashPassword": {
+            "value": null
+        },
+        "securityBeatsPassword": {
+            "value": null
+        },
+        "securityApmPassword": {
+            "value": null
+        },
+        "securityRemoteMonitoringPassword": {
+            "value": null
+        },
+        "appGatewayTier": {
+            "value": "Standard"
+        },
+        "appGatewaySku": {
+            "value": "Small"
+        },
+        "appGatewayCount": {
+            "value": 1
+        },
+        "appGatewayCertBlob": {
+            "value": ""
+        },
+        "appGatewayCertPassword": {
+            "value": null
+        },
+        "appGatewayEsHttpCertBlob": {
+            "value": ""
+        },
+        "appGatewayWafStatus": {
+            "value": "Disabled"
+        },
+        "appGatewayWafMode": {
+            "value": "Detection"
+        },
+        "location": {
+            "value": "westeurope"
+        }
+    }
+}
